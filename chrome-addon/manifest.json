@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+
+	"name": "HTTP Strict Script Security",
+	"description": "Enable the experimental HSSS header",
+	"version": "0.1",
+	"icons": {
+		"32": "img/icon_green.png"
+	},
+	"page_action": { "default_icon": "img/icon_red.png", "default_title": "This website does not support HSSS" },
+	"permissions": [
+		"storage",
+		"webRequest",
+		"webRequestBlocking",
+		"tabs",
+		"<all_urls>"
+	],
+	"background": { "scripts":["js/jsrsasign-5.0.2-all-min.js", "js/sha256.min.js", "js/include.js", "js/background.js"] },
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';"
+}

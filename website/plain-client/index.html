@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Notizbuch</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<form class="formContainer" id="loginForm">
+			<input type="text" id="bookName" placeholder="Name des Notizbuches" title="Gib einen Namen ohne Sonderzeichen ein" pattern="^\w+$" required>
+			<input type="submit" id="doLogin" value="Notizbuch öffnen">
+		</form>
+		<form class="formContainer" id="editorForm">
+			<textarea id="editor" placeholder="Inhalt des Notizbuches..."></textarea>
+			<input type="submit" id="doSave" value="Notizbuch speichern">
+		</form>
+		
+		<script type="text/javascript" src="js/sjcl.js"></script>
+		<script type="text/javascript" src="js/worker.js"></script>
+	</body>
+</html>

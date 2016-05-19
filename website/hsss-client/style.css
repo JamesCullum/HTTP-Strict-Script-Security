@@ -1,0 +1,61 @@
+body
+{
+	background-color:white;
+	margin:0;
+	padding:0;
+	position:relative;
+}
+
+.formContainer
+{
+	background-color:#e60000;
+	color:white;
+	border-radius:10px;
+	
+	width:90%;
+	height:100%;
+	position:relative;
+	margin:25px auto 10px auto;
+	padding:10px;
+}
+
+#loginForm
+{
+	min-height:25px;
+}
+
+#editorForm
+{
+	display:none;
+}
+
+#doLogin, #doSave
+{
+	float:right;
+	background-color:#b10069;
+	color:white;
+	border:none;
+	cursor:pointer;
+	width:20%;
+	padding:5px;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+#bookName, #editor
+{
+	width:75%;
+	border-radius:5px;
+	resize:none;
+	padding-left:10px;
+}
+
+#editor, #doSave
+{
+	height:50px;
+}
+
+#doSave
+{
+	margin-top:3px;
+}
