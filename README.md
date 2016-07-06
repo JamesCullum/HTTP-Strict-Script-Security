@@ -36,7 +36,6 @@ HSSS will be automatically activated on websites and visible on the top right ha
   - Implementations for other browsers and code auditing are especially welcome. Please create issues if you find problems and create a pull request for implementations for other browsers.
 - Are there any weak points?
   - A decentralized approach instead of using GitHub would be better for load balancing
-  - The local storage in Chrome is limited to 5MB. This limit goes per "domain" and a browser extension is a single domain, thus all domains have a joint storage of 5MB.
   - The javascript library jsrsa is being used for signatures & verifications and could contain backdoors (unlikely) or security issues
   - The initial loading of a HSSS enabled website is synchronous and therefore slow
   - It is currently incompatible to other browsers

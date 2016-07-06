@@ -13,6 +13,7 @@
 		"webRequest",
 		"webRequestBlocking",
 		"tabs",
+		"unlimitedStorage",
 		"<all_urls>"
 	],
 	"background": { "scripts":["js/jsrsasign-5.0.2-all-min.js", "js/sha256.min.js", "js/include.js", "js/background.js"] },
