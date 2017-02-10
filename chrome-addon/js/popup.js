@@ -24,7 +24,7 @@
 		else if(tabTitle == "Verified Update available")
 		{
 			var store = JSON.parse(sessionStorage.getItem("store-checked-"+host));
-			document.getElementById("info").innerHTML = "<h4>Update to "+store.current.version.replace(/[^\d\.]/g,"")+"</h4><p>"+store.current.changes.replace(/[^\w\,\-\.\!\/\"\'\: ]/g)+"</p>";
+			document.getElementById("info").innerHTML = "<h4>Update to "+store.current.version.replace(/[^\d\.]/g,"")+"</h4><p>"+store.current.changes.replace(/[^\w\,\-\.\!\/\"\'\: ]/g,"")+"</p>";
 			document.getElementById("button").style.display = "block";
 			document.getElementById("button").addEventListener('click', function() {
 				removeDomain(host);
